@@ -62,10 +62,7 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
   ```shell
   secret=r'你的应用机密'
   ```
-  
-  最终格式应该是类似这样的：
-  
-  
+
 * 第四步，进入你的个人设置页面(右上角头像 Settings，不是仓库里的 Settings)，选择 Developer settings > Personal access tokens > Generate new token,
 
   设置名字为GITHUB_TOKEN , 然后勾选 repo , admin:repo_hook , workflow 等选项，最后点击Generate token即可。
@@ -74,11 +71,9 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 
 （必需点进去Test Api看下，api有没有调用到位，有没有出错。外面的Auto Api打勾只能说明运行是正常的，我们还需要确认10个api调用成功了，就像图里的一样。如果少了几个api，要么是注册应用的时候赋予api权限没弄好；要么是没登录激活onedrive，登录激活一下）
 
-
-
 * 第六步，没出错的话，就搞定啦！！再看看下面的定时次数要不要修改，不打算改就忽略。
 
-  **然后第二天回来确认下是否自动运行了（ation里是否多出来几个）**,是的话就不用管了，完结。
+  **然后第二天回来确认下是否自动运行了（action里是否多出来几个）**,是的话就不用管了，完结。
   
   我设定的每3小时自动运行一次，每次调用3轮（点击右上角星星/star也可以立马调用一次），你们自行斟酌修改（我也不知道保持活跃要调用多少次、多久）：
 
@@ -91,30 +86,3 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 > Api调用
   你们可以自己去graph浏览器看一下，学着自己修改要调用什么api(最重要的是调用outlook、onedrive)
   https://developer.microsoft.com/zh-CN/graph/graph-explorer/preview
-
-### GithubAction介绍 ###
-提供的虚拟环境：
-
-· 2-core CPU
-· 7 GB RAM 内存
-· 14 GB SSD 硬盘空间
-
-使用限制：
-* 每个仓库只能同时支持20个 workflow 并行。
-* 每小时可以调用1000次 GitHub API 。
-* 每个 job 最多可以执行6个小时。
-* 免费版的用户最大支持20个 job 并发执行，macOS 最大只支持5个。
-* 私有仓库每月累计使用时间为2000分钟，超过后$ 0.008/分钟，公共仓库则无限制。
-
-（我们这里用的公共仓库，按理，你们可以设定无限循环调用，然后6小时启动一次，保证24小时全天候调用）
-
-### 最后 ###
-  教程很直白了，应该都会弄吧！
-  
-  代码小白，多包涵！有问题/修改建议可以点击上方issues发布一下，或者PY给我:
-  wz.lxh@outlook.com
-  
-  建了个Q群：657581700，不过没人
-  
-  最后的最后，再次感谢黑幕/paran大佬
-  
