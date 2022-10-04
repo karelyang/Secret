@@ -12,7 +12,7 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 * 加密版，隐藏应用id+机密，保护账号安全。
 
 ### 特别说明/Thanks ###
-* 视频教程：（我操作很慢，自行倍速/快进）
+* 视频教程：
    * B站：https://www.bilibili.com/video/av95688306/
            
 --------------------------------------------------------------
