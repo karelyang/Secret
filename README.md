@@ -1,5 +1,4 @@
 # AutoApiSecret-加密版
-AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
 
 # 置顶 #
 * 本项目只是提供一个自动、免费、无需额外设备的脚本运行方式，换句话说，**就是一台电脑/服务器**。（因为原教程需要服务器/超长时间运转的设备，大部分人都不具备，本项目应运而生）
